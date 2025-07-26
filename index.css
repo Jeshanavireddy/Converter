@@ -1,0 +1,69 @@
+.bg-video{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.converter-container{
+    height: 400px;
+    width: 650px;
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 8px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.wrapper{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    height: 90vh;
+}
+#converter-title{
+    color: white;
+}
+.convertion-icn{
+    margin-right: 10px;
+    margin-left: 10px;
+    color: white;
+}
+#from-input, #to-input{
+    width: 150px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+.fromOptions,.toOptions{
+    color: black;
+}
+#from-input option:disabled,
+#to-input option:disabled {
+  color: grey;
+  background-color: #f0f0f0;
+}
+#input-value-to-convert, #converted-value{
+    background-color: transparent;
+    color: white;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 6px;
+    outline: none;
+    width: 155px;
+}
+#convert-btn{
+    color: white;
+    border: 2px solid white;
+    width: 350px;
+}
+#convert-btn:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
